@@ -109,5 +109,91 @@
         </div>
     </div>
 </section>
+<!-- sponsor et partenaires -->
+ <section class="sponsors">
+    <div class="container">
+        <h2 class="sponsors-title">Sponsors et Partenaires Confirmés</h2>
+        
+        <div class="sponsors-slider">
+            <div class="sponsors-track">
+                <!-- Première ligne: 4 logos -->
+                <div class="sponsors-row-1">
+                    <div class="sponsor-logo">
+                        <img src="{{ asset('images/deliveroo.svg') }}" alt="Deliveroo">
+                    </div>
+                    <div class="sponsor-logo">
+                        <img src="{{ asset('images/tech.svg') }}" alt="Tech">
+                    </div>
+                    <div class="sponsor-logo">
+                        <img src="{{ asset('images/logite.svg') }}" alt="Logite">
+                    </div>
+                    <div class="sponsor-logo">
+                        <img src="{{ asset('images/delivery.svg') }}" alt="Delivery">
+                    </div>
+                </div>
+                
+                <!-- Deuxième ligne: 2 logos -->
+                <div class="sponsors-row-2">
+                    <div class="sponsor-logo">
+                        <img src="{{ asset('images/salesforce.svg') }}" alt="Salesforce">
+                    </div>
+                    <div class="sponsor-logo">
+                        <img src="{{ asset('images/deliveroo.svg') }}" alt="Deliveroo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sponsors-buttons">
+            <button class="btn-primary">Réserver mon billet</button>
+            <button class="btn-secondary">Devenir Sponsor</button>
+        </div>
+    </div>
+</section>
+
+<!-- section a propos avec photo d'un evenement -->
+ <section class="about">
+    <div class="container">
+        <div class="about-content">
+            <h2 class="about-title">À Propos</h2>
+            
+            <!-- Image centrée -->
+            <div class="about-image">
+                <img src="{{ asset('images/internet_computer.jpg') }}" alt="ETHAfrique Conference">
+            </div>
+            
+            <!-- Texte en 2 colonnes sous l'image -->
+            <div class="about-description">
+                <div class="column">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque gravida tempus. Pellentesque odio purus, dapibus ut rutrum at, mollis sit amet eros. Nulla non tortor nec elit lacinia consectetur.</p>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque gravida tempus. Pellentesque odio purus, dapibus ut rutrum at, mollis sit amet eros. Nulla non tortor nec elit lacinia consectetur.</p>
+                    
+                </div>
+                
+                <div class="column">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque gravida tempus. Pellentesque odio purus, dapibus ut rutrum at, mollis sit amet eros. Nulla non tortor nec elit lacinia consectetur.</p>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque gravida tempus. Pellentesque odio purus, dapibus ut rutrum at, mollis sit amet eros. Nulla non tortor nec elit lacinia consectetur.</p>
+                </div>
+            </div>
+            
+            <!-- Section Mission -->
+            <div class="mission-section">
+                <div class="mission-grid">
+                    <div class="mission-item">
+                        <h3>Mission</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque gravida tempus. Pellentesque odio purus, dapibus ut rutrum at, mollis sit amet eros elit lacinia consectetur.</p>
+                    </div>
+                    
+                    <div class="mission-item">
+                        <h3>Mission</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque gravida tempus. Pellentesque odio purus, dapibus ut rutrum at, mollis sit amet eros elit lacinia consectetur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 </html>
