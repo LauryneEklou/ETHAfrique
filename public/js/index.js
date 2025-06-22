@@ -54,4 +54,86 @@ document.addEventListener('DOMContentLoaded', function() {
             closeMenuFunction();
         }
     });
+    
+    // Carousel des speakers
+    const speakersTrack = document.getElementById('speakersTrack');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    
+    if (speakersTrack && prevBtn && nextBtn) {
+        let currentIndex = 0;
+        const speakerCards = speakersTrack.querySelectorAll('.speaker-card');
+        const totalSpeakers = speakerCards.length;
+        
+        // Calculer combien de cartes sont visibles
+        function getVisibleCards() {
+            const containerWidth = speakersTrack.parentElement.offsetWidth;
+            const cardWidth = 280 + 30; // largeur carte + gap
+            return Math.floor(containerWidth / cardWidth);
+        }
+        
+        function updateCarousel() {
+            const cardWidth = 280 + 30; // largeur carte + gap
+            const translateX = currentIndex * cardWidth;
+            speakersTrack.style.transform = `translateX(-${translateX}px)`;
+            
+            // Mettre à jour l'état des boutons
+            const visibleCards = getVisibleCards();
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex >= totalSpeakers - visibleCards;
+        }
+        
+        // Navigation précédente
+        prevBtn.addEventListener('click', function() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+            }
+        });
+        
+        // Navigation suivante
+        nextBtn.addEventListener('click', function() {
+            const visibleCards = getVisibleCards();
+            if (currentIndex < totalSpeakers - visibleCards) {
+                currentIndex++;
+                updateCarousel();
+            }
+        });
+        
+        // Redimensionnement de la fenêtre
+        window.addEventListener('resize', function() {
+            updateCarousel();
+        });
+        
+        // Initialiser
+        updateCarousel();
+    }
+});
+document.addEventListener('DOMContentLoaded', function() {
+    // Code existant...
+    
+    // FAQ Accordéon
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            
+            // Fermer tous les autres items
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                }
+            });
+            
+            // Toggle l'item courant
+            if (isActive) {
+                item.classList.remove('active');
+            } else {
+                item.classList.add('active');
+            }
+        });
+    });
 });
