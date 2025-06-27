@@ -65,9 +65,10 @@
                 </p>
                 
                 <div class="hero-buttons">
-                    <button class="btn-primary">S'inscrire</button>
-                    <button class="btn-secondary">Devenir Sponsor</button>
-                </div>
+                <a href="https://forms.gle/byCossJDeyzFtZqt6" class="btn-primary" style="text-decoration: none;">S'inscrire</a>
+                <a href="https://forms.gle/iajwWoUd9EFnGuwb7" class="btn-secondary" style="text-decoration: none;">Devenir Sponsor</a>
+              </div>
+
             </div>
         </div>
 </section>
@@ -76,7 +77,7 @@
     <!-- la div contient une video qui joue -->
     <div class="video-container">
         <video autoplay muted loop class="video-background">
-            <source src="{{ asset('video/event_video.mp4') }}" type="video/mp4">
+            <source src="{{ asset('video/ICP TOGO MEETUP.mp4') }}" type="video/mp4">
     </video>
 </div>
 </section>
@@ -280,6 +281,8 @@
         </div>
     </div>
 </section>
+
+
 <!-- realisons la section des speakers -->
  <section class="speakers">
     <div class="container">
@@ -376,6 +379,26 @@
         </div>
     </div>
 </section>
+<!-- ✅ Bouton d'inscription centré et plus visible -->
+<div class="mt-4" style="display: flex; justify-content: center; text-align: center;">
+    <div class="formation-card" style="
+        padding: 15px 30px;
+        font-size: 1.1rem;
+        background: #2BF7D5;
+        color: #000;
+        font-weight: bold;
+        box-shadow: 0 0 12px #2BF7D5(164, 192, 7, 0.8);
+        transform: scale(1.02);
+        transition: all 0.3s ease;
+    ">
+        <a href="https://forms.gle/Hf4b73fyPdPyHSud7"
+           style="color: inherit; text-decoration: none;">
+            🔗 Intervenir lors du conférence
+        </a>
+    </div>
+</div>
+
+
 <!-- la section des packages -->
  
 <section class="sponsoring-packages">
